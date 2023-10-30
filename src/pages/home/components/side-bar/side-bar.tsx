@@ -34,7 +34,7 @@ const SideBar: FC<SideBarPropsT> = ({ data, tabI, setTabI }) => {
         </div>
         <div>
           <div className='pb-8 flex flex-col gap-8'>
-            {data.length ? data?.map((item) => {
+            {data?.length ? data?.map((item) => {
               if (item) {
                 return (
                   <div className={`flex gap-4 items-center cursor-pointer pl-8 pb-4 pt-4 ${tabI === item._id ? "bg-kanban_blueviolet_100 text-kanban_white_100 rounded-o_one" : " "}`} onClick={() => { setTabI(item._id) }} key={item._id}>
