@@ -24,7 +24,7 @@ type SideBarPropsT = {
   setTabI: Dispatch<SetStateAction<string | boolean>>
 }
 
-export const SideBar: FC<SideBarPropsT> = ({ data, tabI, setTabI }) => {
+const SideBar: FC<SideBarPropsT> = ({ data, tabI, setTabI }) => {
   const mode = useMode()
   return (
     <div className='max-w-xs bg-kanban_white_100 dark:bg-kanban_black_300 pt-4  border-r-2 border-kanban_white_300 dark:border-kanban_black_400 flex flex-col justify-between' style={{ paddingRight: "13px", minHeight: "calc(100vh - 93px)" }}>
@@ -79,3 +79,5 @@ export const SideBar: FC<SideBarPropsT> = ({ data, tabI, setTabI }) => {
     </div>
   )
 }
+
+export default SideBar
