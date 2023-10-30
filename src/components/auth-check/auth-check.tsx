@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { FC, useEffect, useState } from 'react'
 import { Loading } from '@/components/loading'
 
-export const AuthCheck = (WrappedComponent: () => JSX.Element, register?: boolean) => {
+const AuthCheck = (WrappedComponent: () => JSX.Element, register?: boolean) => {
   const AuthCheckComponent: FC = (props) => {
     const router = useRouter()
     const [isLoading, setIsLoading] = useState(true)
@@ -51,3 +51,5 @@ export const AuthCheck = (WrappedComponent: () => JSX.Element, register?: boolea
 
   return AuthCheckComponent
 }
+
+export default AuthCheck
