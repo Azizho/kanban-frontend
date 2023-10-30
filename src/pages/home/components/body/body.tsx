@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Header } from '../header/header'
-import { SideBar } from './../side-bar/side-bar'
+import Header from '../header/header'
+import SideBar from './../side-bar/side-bar'
 import { request } from '@/config/request'
 import { Loading } from '@/components/loading'
-import { Board } from '../board/board'
+import Board from '../board/board'
 
 type DataT = {
 	_id: string
