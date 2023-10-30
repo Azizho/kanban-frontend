@@ -1,6 +1,6 @@
 "use client"
 
-import { AuthCheck } from '@/components/auth-check'
+import AuthCheck from '@/components/auth-check'
 import { AuthForm } from '@/components/auth-form'
 import { request } from '@/config/request'
 import { useMode } from '@/mode'
