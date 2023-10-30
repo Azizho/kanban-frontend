@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const request = axios.create({
-	baseURL: 'http://localhost:3600',
+	baseURL: 'https://kanban-backend-telg.onrender.com',
 });
 
 request.interceptors.request.use(
