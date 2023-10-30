@@ -8,7 +8,7 @@ import Link from 'next/link'
 import React, { FC } from 'react'
 import { ArrowButton } from './../../../../assets/icons/arrow-bottom'
 
-export const Header: FC<{ isSide: boolean, title?: string }> = ({ isSide, title }) => {
+const Header: FC<{ isSide: boolean, title?: string }> = ({ isSide, title }) => {
 	const { mode } = useMode()
 	return (
 		<header className='bg-kanban_white_100 dark:bg-kanban_black_300 border-b-2 border-kanban_white_300 dark:border-kanban_black_400 '>
@@ -44,3 +44,5 @@ export const Header: FC<{ isSide: boolean, title?: string }> = ({ isSide, title 
 		</header>
 	)
 }
+
+export default Header
