@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+body {
+	@apply bg-kanban_white_300 dark:bg-kanban_black_200 font-plus_jakarta_sans;
+}
+
+body * {
+	@apply transition-colors duration-500;
+}
