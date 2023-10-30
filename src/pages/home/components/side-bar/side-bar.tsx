@@ -30,7 +30,7 @@ const SideBar: FC<SideBarPropsT> = ({ data, tabI, setTabI }) => {
     <div className='max-w-xs bg-kanban_white_100 dark:bg-kanban_black_300 pt-4  border-r-2 border-kanban_white_300 dark:border-kanban_black_400 flex flex-col justify-between' style={{ paddingRight: "13px", minHeight: "calc(100vh - 93px)" }}>
       <div>
         <div>
-          <h3 className='font-plus_jakarta_sans text-xs leading-normal tracking-wide font-bold pb-5 pl-8'>ALL BOARDS ({data.length})</h3>
+          <h3 className='font-plus_jakarta_sans text-xs leading-normal tracking-wide font-bold pb-5 pl-8'>ALL BOARDS ({data?.length || 0})</h3>
         </div>
         <div>
           <div className='pb-8 flex flex-col gap-8'>
@@ -46,7 +46,7 @@ const SideBar: FC<SideBarPropsT> = ({ data, tabI, setTabI }) => {
                 )
               }
               return " "
-            }) : " "}
+            }) : null}
           </div>
           <div className='flex gap-4 items-center cursor-pointer pl-8 mb-14'>
             <FluentBoardIcon svgColor='blueviolet' />
