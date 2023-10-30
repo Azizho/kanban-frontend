@@ -1,6 +1,6 @@
 
 
-export const Board = () => {
+const Board = () => {
 	return (
 		<div>
 			<div className='pt-6 pl-6'>
@@ -19,3 +19,5 @@ export const Board = () => {
 		</div>
 	)
 }
+
+export default Board
