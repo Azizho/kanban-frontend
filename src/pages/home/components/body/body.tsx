@@ -15,7 +15,7 @@ type DataT = {
 	lastUpdate: number
 }
 
-export const HomeBody = () => {
+const HomeBody = () => {
 	const [loading, isLoading] = useState(true)
 	const [data, setData] = useState<[] | DataT[]>([])
 	const [isSide, setIsSide] = useState(true)
@@ -76,3 +76,5 @@ export const HomeBody = () => {
 		</>
 	)
 }
+
+export default HomeBody
