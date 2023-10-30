@@ -1,1 +1,3 @@
-export * from './auth-check';
+import AuthCheck from './auth-check';
+
+export default AuthCheck
