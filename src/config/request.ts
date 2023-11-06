@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const request = axios.create({
+const request = axios.create({
 	baseURL: 'https://kanban-backend-telg.onrender.com',
 });
 
@@ -15,3 +15,5 @@ request.interceptors.request.use(
 		return Promise.reject(err);
 	}
 );
+
+export {request}
