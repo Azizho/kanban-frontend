@@ -16,6 +16,7 @@ const RegisterPage = () => {
 	const router = useRouter().replace
 	const submit = handleSubmit((data) => {
 		request.post("/register", data).then(res => {
+			console.log(1)
 			if (res.status === 201) {
 				localStorage.setItem("token", res.data.token)
 				router("/")
@@ -23,6 +24,8 @@ const RegisterPage = () => {
 		}).catch((err) => {
 			setServerError(err.response.data.message)
 		})
+
+		console.log(2)
 	})
 
 	return (
